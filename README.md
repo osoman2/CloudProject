@@ -1,4 +1,5 @@
 # CloudProject: End-to-end chat containerized and deployed
+![Arquitectura PreCloudCourse](https://github.com/osoman2/CloudProject/blob/main/imgs/arquitecturaPreCloud.PNG)
 
 
 ## Diseño 
