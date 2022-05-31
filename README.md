@@ -1,5 +1,7 @@
 # CloudProject: End-to-end chat containerized and deployed
-
+## Integrantes
+- Raúl Mosquera
+- Osman Rafael Vilchez Aguirre
 
 ## Diseño 
 ### Arquitectura
