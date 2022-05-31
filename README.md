@@ -6,7 +6,7 @@
 ![Arquitectura PreCloudCourse](https://github.com/osoman2/CloudProject/blob/main/imgs/arquitecturaPreCloud.PNG)
 
 ### Funcionalidad
-La aplicación usa una base de datos para almacenar la contraseña hasheada de los usuarios, los mensajes encriptados y los códigos de verificación del 2-step autentification. 
+La aplicación es un chat 1 a 1 con encriptación asimétrica. Usa una base de datos para almacenar la contraseña hasheada de los usuarios, los mensajes encriptados y los códigos de verificación del 2-step autentification. 
 - Cada usuario puede crearse una cuenta, loguearse y chatear con todas las personas disponibles en la base de datos pero para ello deberá subir una llave que está guardada en el local storage.
 - Al iniciar el chat con cada una de las personas, se creará una llave privada para ambos usuarios mediante criptografía asimétrica que deberá ser descargada por ambos para que se pueda reutilizar para encriptar y desencriptar los mensajes posteriores. Conservar la llave en local storage fue el resultado parcial de un modelamiento de amenazas por lo que conservar esta idea de la creación del secreto compartido debe de tener soluciones que mantengan esta naturaleza.
 
