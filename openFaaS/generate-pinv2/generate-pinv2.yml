@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8010
+functions:
+  generate-pinv2:
+    lang: python3
+    handler: ./generate-pinv2
+    image: rvmosquera/generate-pinv2:latest
+
