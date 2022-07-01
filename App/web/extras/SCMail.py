@@ -20,7 +20,7 @@ class SCMail:
         )
         try:
             tmp = os.environ.get('SENDGRID_API_KEY')
-            print(tmp)
+            #print(tmp)
             sg = SendGridAPIClient(tmp)
 
             response = sg.send(message)

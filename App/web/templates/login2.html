@@ -150,9 +150,11 @@
                 },
                 error: function(response){
 
-                    if(response['status']==401){
+                    if(response['status']==401) {
                         alert("F");
-                    }else{
+                    } else if (response['status']==402) {
+                        alert("Error en la generación del PIN");
+                    } else {
                         alert("Correo enviado.");
                     }
                 }

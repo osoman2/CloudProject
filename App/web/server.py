@@ -361,7 +361,15 @@ def start_user():
 def generate_pin():
     message = json.loads(request.data)
     email = message['username']
-    pin_str = Security.generate_pin()
+    #pin_str = Security.generate_pin()
+    result = Security.generate_pin_remote()
+
+    if result[1] != 0:
+        message = {'message': 'Unauthorized'}
+        return Response(message, status=402, mimetype='application/json')
+
+    pin_str = result[0]
+
     mail_pin = SCMail(email, pin_str)
     rc = mail_pin.send_email()
 
