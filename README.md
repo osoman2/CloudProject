@@ -10,5 +10,11 @@ En el presente diagrama se muestra como la aplicación fue deployada en minikube
 ![Diagrama con containers](/imgs/CloudProject.jpg)
 
 
-##Scripts
+## Scripts
 ### Docker
+```console
+docker build -t rvmosquera/cloud-web-app:testing .
+
+docker run -p 8080:8080 rvmosquera/cloud-web-app:testing
+
+```
