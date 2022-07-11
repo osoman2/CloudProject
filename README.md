@@ -40,8 +40,8 @@ kubectl port-forward service/flask-node 7070:8080
 ```
 ### Multicontainer (Docker-compose)
 ```console
-#Creating docker-compose.yml
-doker up -
+Creating docker-compose.yml
+doker up -f
 ```
 ### Compose to Minikube 
 ```console
