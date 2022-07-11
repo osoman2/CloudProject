@@ -7,7 +7,7 @@
     - [Docker](#docker)
     - [Multicontainer (Docker-compose)](#Multicontainer (Docker-compose))
     - [Minikube](#Minikube)
-    - [Docker-compose to Minikube](#Docker-compose to Minikube)
+    - [Docker compose to Minikube](#Docker compose to Minikube)
     - [OpenFaaS](#openfaas)
     - [Prometheus](#prometheus)
     - [Grafana](#grafana)
@@ -43,7 +43,7 @@ kubectl port-forward service/flask-node 7070:8080
 #Creating docker-compose.yml
 doker up -
 ```
-### Docker-compose to Minikube 
+### Docker compose to Minikube 
 ```console
 minikube 
 ```
