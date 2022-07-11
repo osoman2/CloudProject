@@ -6,7 +6,7 @@
   - [Scripts](#scripts)
     - [Docker](#docker)
     - [Minikube](#Minikube)
-    - [Multicontainer (Docker-compose)](#Multicontainer (Docker-compose))
+    - [Multicontainer (Docker-compose)](#multicontainer-docker-compose))
     - [Compose to Minikube](#compose-to-minikube)
     - [OpenFaaS](#openfaas)
     - [Prometheus](#prometheus)
