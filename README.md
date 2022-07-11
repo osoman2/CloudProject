@@ -36,7 +36,15 @@ kubectl expose deployment flask-node --type=NodePort --port=8080
 
 kubectl port-forward service/flask-node 7070:8080
 ```
-
+### Multicontainer (Docker-compose)
+```console
+#Creating docker-compose.yml
+doker up -
+```
+### Docker-compose to Minikube 
+```console
+minikube 
+```
 ### OpenFaaS
 ```console
 faas-cli new --lang python3 generate-pinv2
