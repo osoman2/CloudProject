@@ -40,12 +40,17 @@ kubectl port-forward service/flask-node 7070:8080
 ```
 ### Multicontainer (Docker-compose)
 ```console
-Creating docker-compose.yml
-doker up -f
+#Creating docker-compose.yml
+
+docker compose up
 ```
 ### Compose to Minikube 
 ```console
-minikube 
+kompose convert
+
+minikube start
+
+kubectl apply -f web-service.yaml, postgres-service.yaml, web-deployment.yaml, postgres-deployment.yaml, web-claim0-persistentvolumeclaim.yaml, postgres-claim0-persistentvolumeclaim.yaml
 ```
 ### OpenFaaS
 ```console
