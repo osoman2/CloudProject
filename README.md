@@ -7,7 +7,7 @@
     - [Docker](#docker)
     - [Minikube](#Minikube)
     - [Multicontainer (Docker-compose)](#Multicontainer (Docker-compose))
-    - [Compose to Minikube](#Compose to Minikube)
+    - [Compose to Minikube](#compose-to-minikube)
     - [OpenFaaS](#openfaas)
     - [Prometheus](#prometheus)
     - [Grafana](#grafana)
