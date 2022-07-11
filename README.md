@@ -5,6 +5,10 @@
   - [Diagrama general](#diagrama-general)
   - [Scripts](#scripts)
     - [Docker](#docker)
+    - [Minikube](#minikube)
+    - [OpenFaaS](#openfaas)
+    - [Prometheus](#prometheus)
+    - [Grafana](#grafana)
 
 ## Integrantes
 - Raúl Vides Mosquera Pumaricra
@@ -23,4 +27,48 @@ docker build -t rvmosquera/cloud-web-app:testing .
 
 docker run -p 8080:8080 rvmosquera/cloud-web-app:testing
 
+```
+### Minikube
+```console
+kubectl create deployment flask-node --image=rvmosquera/cloud-web-app:testing
+
+kubectl expose deployment flask-node --type=NodePort --port=8080
+
+kubectl port-forward service/flask-node 7070:8080
+```
+
+### OpenFaaS
+```console
+faas-cli new --lang python3 generate-pinv2
+
+faas-cli build -f ./generate-pinv2.yml
+
+faas-cli push -f ./generate-pinv2.yml
+
+faas-cli deploy -f ./generate-pinv2.yml
+
+faas-cli list --gateway http://127.0.0.1:8010
+```
+
+### Prometheus
+```console
+//openFaaS prometheus 
+kubectl port-forward svc/prometheus 9090 -nopenfaas
+
+kubectl run grafana -n openfaas --image=stefanprodan/faas-grafana:4.6.3 --port=3000
+
+
+//mikube prometheus 
+kubectl --namespace default port-forward prometheus-server-6bd8b49ff8-7jnxn 9090
+```
+
+### Grafana
+```console
+kubectl run --generator=run-pod/v1
+
+kubectl -n openfaas run --image=stefanprodan/faas-grafana:4.6.3 --port=3000 grafana
+
+kubectl -n openfaas expose pod grafana --type=NodePort --name=grafana
+
+kubectl port-forward pod/grafana 3000:3000 -n openfaas
 ```
