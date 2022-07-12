@@ -11,7 +11,8 @@
     - [OpenFaaS](#openfaas)
     - [Prometheus](#prometheus)
     - [Grafana](#grafana)
-    - [Demo](#demo)
+  - [Escalamiento](#escalamiento)
+  - [Demo](#demo)
 
 ## Integrantes
 - Raúl Vides Mosquera Pumaricra
@@ -88,5 +89,7 @@ kubectl -n openfaas expose pod grafana --type=NodePort --name=grafana
 
 kubectl port-forward pod/grafana 3000:3000 -n openfaas
 ```
-### Demo
+## Escalamiento
+[Presentación](https://docs.google.com/presentation/d/1WIoZhXMqUExz97SMg6poCnPPz_uLmfjtZEPoE_4wArY/edit?usp=sharing)
+## Demo
 [Link al video](https://drive.google.com/file/d/11XezWKYL72NwwC92eiXKJu2izKF9pE2A/view?usp=sharing)
