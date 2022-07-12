@@ -20,7 +20,7 @@
 ## Diagrama general
 En el presente diagrama se muestra como la aplicación fue deployada en minikube, así como su interacción con diversas apliaciones como por ejemplo openFaaS.
 
-![Diagrama con containers](/imgs/CloudProject.jpg)
+![Diagrama con containers](/imgs/CloudProjectV2.jpg)
 
 
 ## Scripts
